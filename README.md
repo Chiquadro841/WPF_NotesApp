@@ -9,7 +9,8 @@ Il box della categoria è un campo suggerito, quindi scrivendo i primi caratteri
 
 !["insert"](images/insert.JPG)
 
-### Finestra categoria dove si può selezionare e visualizzare i documenti interni presenti e visualizzarli
+### Finestra visualizza
+Si possono selezionare le categorie e visualizzare i documenti presenti e il loro contenuto, con possibilità di modifica ed eliminazione.
 
 ![](images/category.JPG)
 ![](images/view.JPG)
