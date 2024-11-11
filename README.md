@@ -4,7 +4,8 @@ Si possono inserire, modificare, eliminare, i documenti che hanno : categoria, t
 di gestione note, liste e documenti di qualsiasi genere,
 Il menu principale possiede un grafico di abbellimento a scopo didattico con OxyPlot, che rappresenta il numero di documenti per giorno di inserimento.
 
-["mainwindow"](images/mainwindow.JPG)
+
+!["insert"](images/insert.JPG)
 
 
 Vengono mostrati solo i file principali del progetto
