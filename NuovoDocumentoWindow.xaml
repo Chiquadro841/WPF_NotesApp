@@ -1,0 +1,59 @@
+﻿<Window x:Class="MongoDBApp.NuovoDocumentoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Nuovo Documento" Height="300" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Contenitore StackPanel per CategoryTextBox e SuggestionsListBox nello stesso Row -->
+        <StackPanel Grid.Row="0">
+            <!-- TextBox per l'inserimento della categoria -->
+            <TextBox x:Name="CategoryTextBox"
+                     Width="200" 
+                     Height="25" 
+                     VerticalAlignment="Top" 
+                     TextChanged="CategoryTextBox_TextChanged"
+                     />
+
+            <!-- ListBox per visualizzare i suggerimenti -->
+            <ListBox x:Name="SuggestionsListBox"
+                     Width="200"
+                     Height="100"
+                     Visibility="Collapsed"
+                     MouseDoubleClick="SuggestionsListBox_MouseDoubleClick"/>
+        </StackPanel>
+
+        <!-- Campo Titolo -->
+        <TextBox Name="TitleTextBox" 
+                 Grid.Row="1" 
+                 HorizontalAlignment="Stretch" 
+                 Margin="10,10,10,0" 
+                 VerticalAlignment="Top" 
+                 Height="30" 
+                 Text="Titolo"/>
+
+        <!-- Campo Contenuto -->
+        <TextBox Name="ContentTextBox" 
+                 Grid.Row="2" 
+                 HorizontalAlignment="Stretch" 
+                 Margin="10,10,10,0" 
+                 VerticalAlignment="Top" 
+                 Height="80" 
+                 Text="Contenuto"/>
+
+        <!-- Pulsante Salva -->
+        <Button Content="Salva" 
+                Grid.Row="3" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Bottom" 
+                Height="30" 
+                Width="100" 
+                Margin="0,0,0,20" 
+                Click="Salva_Click"/>
+    </Grid>
+</Window>

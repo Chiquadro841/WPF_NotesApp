@@ -1,0 +1,41 @@
+﻿<Window x:Class="MongoDBApp.CustomMessageBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Messaggio" Height="600" Width="600" ResizeMode="CanResize" WindowStartupLocation="CenterOwner"
+       BorderBrush="Black"  BorderThickness="1">
+    <Grid>
+        <!-- Definiamo due righe: una per l'intestazione e una per il testo -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <!-- Per l'intestazione -->
+            <RowDefinition Height="2*"/>
+            <!-- Per il testo con scroll -->
+            <RowDefinition Height="Auto"/>
+            <!-- Per il pulsante -->
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0">
+            
+                <MenuItem Header="Modifica" Click="Modifica_Click"/>
+                <MenuItem Header="Elimina" Click="Elimina_Click"/>
+           
+        </Menu>
+
+        <!-- Intestazione (Riga 0) -->
+        <Border Grid.Row="1" BorderBrush="Gray" BorderThickness="2" Padding="10" Margin="20,20,20,0">
+            <TextBox Name="Intestazione" IsReadOnly="True" TextWrapping="Wrap" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16"/>
+        </Border>
+
+
+        <Border Grid.Row="2" BorderBrush="Gray" BorderThickness="2" Padding="10" Margin="20,20,20,60">
+
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <TextBox Name="MessageTextBox" IsReadOnly="True" TextWrapping="Wrap" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" MaxWidth="400"/>
+            </ScrollViewer>
+        </Border>
+
+        <Button Name="okButton" Grid.Row="3" Content="OK" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10" Width="75" Click="Button_Click"/>
+    </Grid>
+</Window>
+

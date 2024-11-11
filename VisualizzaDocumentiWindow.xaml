@@ -1,0 +1,24 @@
+﻿<Window x:Class="MongoDBApp.VisualizzaDocumentiWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Visualizza Documenti" Height="300" Width="400">
+    <Grid>
+       
+   
+        <ListBox  Name="TitoliListBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" 
+                  MouseDoubleClick="TitoliListBox_MouseDoubleClick"
+                  />
+        
+        
+  <!-- Pulsante "Indietro" per tornare alla lista delle categorie -->
+        <Button Name="BackButton" 
+                Content="Indietro" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Bottom" 
+                Margin="10" 
+                Width="60" 
+                Click="BackButton_Click" 
+                Visibility="Collapsed"/>
+    
+    </Grid>
+</Window>
