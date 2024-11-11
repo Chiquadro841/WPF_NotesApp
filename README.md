@@ -1,5 +1,5 @@
 # WPF_NotesApp
-Esempio di app Desktop in wpf per inserire note/documenti.
+Esempio di app Desktop in wpf per inserire note/documenti (Vengono mostrati solo i file principali del progetto)
 Si possono inserire, modificare, eliminare, i documenti che hanno : categoria, titolo e contenuto. Ottimo come spunto per app
 di gestione note, liste e documenti di qualsiasi genere.
 Il menu principale possiede un grafico di abbellimento a scopo didattico con OxyPlot, che rappresenta il numero di documenti per giorno di inserimento.
@@ -16,4 +16,4 @@ Si possono selezionare le categorie e visualizzare i documenti presenti e il lor
 ![](images/view.JPG)
 
 
-Vengono mostrati solo i file principali del progetto
+
